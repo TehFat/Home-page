@@ -1,0 +1,533 @@
+
+/* General Styles */
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+} 
+
+/* Header */
+.header {
+    width: 95%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background-color: #1a1a1a;
+    align-items: center;
+    border-bottom: 2px solid #e4e3e3;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #FFBD39;;
+}
+
+
+.popup {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.popup-content {
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    background: transparent !important;
+    color: white; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.text-container {
+    flex: 1;
+    padding-right: 20px;
+    margin-left: 90px; 
+    margin-top: 90px;
+    font-size: 1.5rem;
+}
+
+.highlight {
+    color: #FFBD39; 
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+.btn {
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    background: transparent !important;
+    color: #fff !important;
+    padding: 16px 24px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none; 
+} 
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    margin-left: 90px; 
+    margin-top: 90px;
+}
+
+.image-container img {
+    width: 400px;          
+    height: 400px;          
+    object-fit: cover;      
+    border-radius: 50%;     
+}
+
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #4db8ff;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px;
+    background-color: #1a1a1a;
+    text-align: left;
+    font-size: 1.5rem;
+    cursor: default;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project {
+    background-image: url(/images/project\ bg\ pic.jpeg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); 
+    width: 200px;
+    transition: transform 0.3s ease; 
+    text-align: center;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 8px; 
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 15px 0;
+}
+
+.project p {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.project-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.project-links a:hover {
+    transform: scale(1.1);
+}
+
+.project-links a svg {
+    fill: white;
+    width: 24px;
+    height: 24px;
+    transition: fill 0.3s ease;
+}
+
+.project-links a:hover svg {
+    fill: #0366d6; /* GitHub blue color on hover */
+}
+
+/* Tools Section */
+.tools {
+    padding: 50px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.tools-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.frontend, .backend {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+.tools-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.tool-icon {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+
+.tool p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.tool:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+/* Footer */
+.footer-contanier {
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    gap: 20px;
+    border-top: 2px solid #e4e3e3;
+    font-size: large;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex: 1;
+    max-width: 50%;
+}
+
+.footer-img-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.37);
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 1; }
+}
+
+#starsCanvas {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    animation: twinkle 2s infinite alternate ease-in-out; */
+}
+
+
+
+#projects, .tools, footer, .header, .btn {
+    cursor: default; 
+}
+
+
+/* Typing Effect */
+#typing-animation {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    border-right: 3px solid white;
+    padding-right: 5px;
+    animation: blinkCursor 0.8s infinite;
+}
+
+/* Cursor Blinking */
+@keyframes blinkCursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.ripple {
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    border-radius: 10px;
+    opacity: 0.8;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right,#04c8bbc9, rgba(255, 0, 43, 0.7), rgba(255, 0, 255, 0.6));
+    filter: blur(10px);
+    animation: waveEffect 1.5s ease-out forwards;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.263); /* Soft glow */
+}
+
+/* Extra layers for more depth */
+.ripple::before,
+.ripple::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-radius: inherit;
+    background: inherit;
+    opacity: 0.6;
+    filter: blur(10px);
+}
+
+.ripple::before {
+    animation: waveEffect 1.7s ease-out forwards;
+}
+
+.ripple::after {
+    animation: waveEffect 2s ease-out forwards;
+}
+
+@keyframes waveEffect {
+    0% {
+        transform: scale(0.8) translate(-50%, -50%) rotate(0deg);
+        opacity: 0.8;
+    }
+    25% {
+        transform: scale(1) translate(-48%, -50%) rotate(5deg); /* Slight horizontal movement */
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.8) translate(-52%, -50%) rotate(-8deg); /* Reverse direction */
+        opacity: 0.5;
+    }
+    75% {
+        transform: scale(2.2) translate(-50%, -50%) rotate(12deg);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(3) translate(-50%, -50%) rotate(20deg);
+        opacity: 0;
+    }
+}
+
+
+
+
+/* General styling for the ripple */
+
+ /* .ripple {
+    position: absolute;
+    width: 30px; 
+    height: 30px;
+    border-radius: 90%; 
+    opacity: 0.8;
+    pointer-events: none; 
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(0, 229, 255, 0.08) 10%,rgba(255, 225, 0, 0.952) 30%, rgba(8, 0, 255, 0.3) 50%, rgba(0, 255, 0, 0.719) 70%, rgba(0, 0, 255, 0.1) 90%, transparent); 
+    animation: rainbowSmoke 1.5s ease-out forwards;
+}  */
+/* Keyframe animation for the smoke trail */
+/* @keyframes rainbowSmoke {
+    0% {
+        transform: scale(0.8) translate(-50%, -50%);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(2) translate(-50%, -50%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(3.5) translate(-50%, -50%);
+        opacity: 0;
+    }
+} */
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
+    }
+
+    .text-container {
+        margin-left: 0;
+        margin-top: 150px;
+        font-size: 1rem;
+        padding-right: 0;
+    }
+
+    .image-container {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .tools-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contanier {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-wrapper {
+        max-width: 100%;
+    }
+
+    .footer-img-wrapper {
+        margin-top: 20px;
+    }
+
+    .footer-socials {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+

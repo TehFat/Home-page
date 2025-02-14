@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timee | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1 class="logo">Timee</h1>
+        <nav>
+            
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" id="about-link">About</a>
+            
+        </nav>
+    </header>
+    <div id="about-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" id="close-popup">&times;</span>
+            <h2>About Me</h2>
+            <p>I'm Tehreem Fatima, a front-end developer studying at Hyper Island, Stockholm. I specialize in JavaScript, React, TypeScript, CSS, and HTML, with a background in C++ and C#. Currently, I'm expanding my skills in Backend, Accessibility, SEO, UX, and UI to create optimized and user-friendly web experiences.</p>
+        </div>
+    </div>
+
+    <canvas id="starsCanvas"></canvas>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="text-container">
+            <span class="my-text">Hi! </span>
+            <h2>I'm <span class="highlight">TEHREEM FATIMA</span></h2>
+          <br>
+            <span id="typing-animation"></span>
+            <h2>A Student in Hyper Island</h2>
+
+			           
+					<a href="https://github.com/TehFat?tab=repositories" class="btn">My works</a></p>
+        </div>
+       
+        <div class="image-container">
+            <img src="images/my pic.jpg" alt="Tehreem Fatima">
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <!-- Left Side Projects -->
+            <div class="project">
+                <img src="images/pic1.png" alt="Project 1">
+                <h3>MovieMagic</h3>
+                <p>"MoveMagic is a React-based app for discovering and tracking movies with a seamless UI and real-time search."</p>
+                <br>
+                <div class="project-links">
+                    <a href="https://github.com/TehFat/Group-9" target="_blank" class="github-link">
+                        <!-- GitHub SVG Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 0C5.372 0 0 5.372 0 12c0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.581 0-.286-.011-1.047-.017-2.054-3.338.726-4.04-1.637-4.04-1.637-.546-1.392-1.333-1.763-1.333-1.763-1.091-.746.082-.731.082-.731 1.206.085 1.84 1.24 1.84 1.24 1.07 1.834 2.808 1.303 3.495 1.003.109-.775.418-1.303.761-1.597-2.666-.303-5.466-1.334-5.466-5.93 0-1.309.469-2.379 1.24-3.22-.124-.303-.537-1.538.118-3.22 0 0 1.003-.32 3.28 1.243.95-.264 1.96-.396 2.967-.396s2.017.132 2.967.396c2.277-1.563 3.28-1.243 3.28-1.243.655 1.682.243 2.917.118 3.22.771.841 1.24 1.911 1.24 3.22 0 4.609-2.802 5.626-5.466 5.93.343.294.642.872.642 1.754 0 1.267-.017 2.28-.017 2.541 0 .32.188.693.795.581 4.771-1.587 8.207-6.085 8.207-11.387 0-6.628-5.372-12-12-12z"/>
+                        </svg>
+                        
+                    </a>
+                    <a href="https://whimsical-bunny-38ec3b.netlify.app/" target="_blank" class="live-demo-link">
+                        <!-- Live Demo SVG Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/>
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                          </svg>
+                        
+                    </a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/pic2.png" alt="Bloom">
+                <h3>E-commerce website</h3>
+                <p>This project is a collaborative effort aimed at creating a fully functional e-commerce website.</p>
+                <div class="project-links">
+                    <a href="https://github.com/minzikimi/bloom-e-commerce" target="_blank" class="github-link">
+                       
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 0C5.372 0 0 5.372 0 12c0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.581 0-.286-.011-1.047-.017-2.054-3.338.726-4.04-1.637-4.04-1.637-.546-1.392-1.333-1.763-1.333-1.763-1.091-.746.082-.731.082-.731 1.206.085 1.84 1.24 1.84 1.24 1.07 1.834 2.808 1.303 3.495 1.003.109-.775.418-1.303.761-1.597-2.666-.303-5.466-1.334-5.466-5.93 0-1.309.469-2.379 1.24-3.22-.124-.303-.537-1.538.118-3.22 0 0 1.003-.32 3.28 1.243.95-.264 1.96-.396 2.967-.396s2.017.132 2.967.396c2.277-1.563 3.28-1.243 3.28-1.243.655 1.682.243 2.917.118 3.22.771.841 1.24 1.911 1.24 3.22 0 4.609-2.802 5.626-5.466 5.93.343.294.642.872.642 1.754 0 1.267-.017 2.28-.017 2.541 0 .32.188.693.795.581 4.771-1.587 8.207-6.085 8.207-11.387 0-6.628-5.372-12-12-12z"/>
+                        </svg>
+                    
+                    </a>
+                    <a href="https://bloom-ecommerce-hi26.netlify.app/" target="_blank" class="live-demo-link">
+                       
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/>
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                          </svg>
+                        
+                    </a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/pic3.png" alt="Project 3">
+                <h3>Admin Dashboard</h3>
+                <p>This Admin Dashboard Homepage is the foundational page of an administrative interface built using HTML and CSS.</p>
+                <br>
+                <div class="project-links">
+                    <a href="https://github.com/TehFat/admin-dashboard" target="_blank" class="github-link">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 0C5.372 0 0 5.372 0 12c0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.581 0-.286-.011-1.047-.017-2.054-3.338.726-4.04-1.637-4.04-1.637-.546-1.392-1.333-1.763-1.333-1.763-1.091-.746.082-.731.082-.731 1.206.085 1.84 1.24 1.84 1.24 1.07 1.834 2.808 1.303 3.495 1.003.109-.775.418-1.303.761-1.597-2.666-.303-5.466-1.334-5.466-5.93 0-1.309.469-2.379 1.24-3.22-.124-.303-.537-1.538.118-3.22 0 0 1.003-.32 3.28 1.243.95-.264 1.96-.396 2.967-.396s2.017.132 2.967.396c2.277-1.563 3.28-1.243 3.28-1.243.655 1.682.243 2.917.118 3.22.771.841 1.24 1.911 1.24 3.22 0 4.609-2.802 5.626-5.466 5.93.343.294.642.872.642 1.754 0 1.267-.017 2.28-.017 2.541 0 .32.188.693.795.581 4.771-1.587 8.207-6.085 8.207-11.387 0-6.628-5.372-12-12-12z"/>
+                        </svg>
+                        
+                    </a>
+                    <a href="https://tehfat.github.io/admin-dashboard/" target="_blank" class="live-demo-link">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/>
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                          </svg>
+                        
+                    </a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/pic4.png" alt="Project 4">
+                <h3>Quiz Game</h3>
+                <p>This Quiz Game is an interactive web-based game that fetches questions from a trivia API, allowing users to test their knowledge on various topics. </p>
+                <div class="project-links">
+                    <a href="https://github.com/TehFat/Quiz-game" target="_blank" class="github-link">
+                      
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 0C5.372 0 0 5.372 0 12c0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.581 0-.286-.011-1.047-.017-2.054-3.338.726-4.04-1.637-4.04-1.637-.546-1.392-1.333-1.763-1.333-1.763-1.091-.746.082-.731.082-.731 1.206.085 1.84 1.24 1.84 1.24 1.07 1.834 2.808 1.303 3.495 1.003.109-.775.418-1.303.761-1.597-2.666-.303-5.466-1.334-5.466-5.93 0-1.309.469-2.379 1.24-3.22-.124-.303-.537-1.538.118-3.22 0 0 1.003-.32 3.28 1.243.95-.264 1.96-.396 2.967-.396s2.017.132 2.967.396c2.277-1.563 3.28-1.243 3.28-1.243.655 1.682.243 2.917.118 3.22.771.841 1.24 1.911 1.24 3.22 0 4.609-2.802 5.626-5.466 5.93.343.294.642.872.642 1.754 0 1.267-.017 2.28-.017 2.541 0 .32.188.693.795.581 4.771-1.587 8.207-6.085 8.207-11.387 0-6.628-5.372-12-12-12z"/>
+                        </svg>
+                        
+                    </a>
+                    <a href="https://tehfat.github.io/Quiz-game/" target="_blank" class="live-demo-link">
+                     
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/>
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                          </svg>
+                    </a>
+                </div>
+            </div>
+        
+        </div>        
+    </section>
+
+    <!-- Tools Section -->
+    <section class="tools">
+        <h2>Tools</h2>
+        <div class="tools-container">
+            <div class="frontend">
+                <h3>Frontend</h3>
+                <div class="tools-list">
+                    <div class="tool">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="HTML Icon" class="tool-icon">
+                        <p>HTML</p>
+                    </div>
+                    <div class="tool">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="CSS Icon" class="tool-icon">
+                        <p>CSS</p>
+                    </div>
+                    <div class="tool">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Icon" class="tool-icon">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="tool">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="React Icon" class="tool-icon">
+                        <p>React</p>
+                    </div>
+                </div>
+            </div>
+            <div class="backend">
+                <h3>Backend</h3>
+                <div class="tools-list">
+                    <div class="tool">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C Icon" class="tool-icon">
+                        <p>C++</p>
+                    </div>
+                    <div class="tool">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C# Icon" class="tool-icon">
+                        <p>C#</p>
+                    </div>
+                    <div class="tool">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" 
+                             alt="TypeScript Icon" class="tool-icon">
+                        <p>TypeScript</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact" class="footer-contanier">
+        <div class="contact-wrapper">
+           Contact
+            <div class="footer-text">Please get in touch if you think my work could be mutually beneficial!</div>
+            <div class="adress"> Address, Enbecan 11 Tumba, Stockholm</div>
+            <div class="contacts">
+                <div class="phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 16.92V19a2 2 0 0 1-2 2h-1c-4.97 0-9.93-2-13.45-5.55C2 12.93 0 7.97 0 3V2a2 2 0 0 1 2-2h2.08a1 1 0 0 1 1 .76c.12.42.26.84.43 1.26a1 1 0 0 1-.21 1.09L4.29 5.71a16 16 0 0 0 9 9l1.61-1.61a1 1 0 0 1 1.09-.21c.42.17.84.31 1.26.43a1 1 0 0 1 .76 1V22z"/>
+                    </svg>
+                    0046721232176
+                  </div>
+                  
+                  <div class="e-mail">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    fatimatehreembaloch@gmail.com
+                  </div>
+                  
+                  <div class="github">
+                    <a href="https://github.com/TehFat?tab=repositories" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 0C5.372 0 0 5.372 0 12c0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.581 0-.286-.011-1.047-.017-2.054-3.338.726-4.04-1.637-4.04-1.637-.546-1.392-1.333-1.763-1.333-1.763-1.091-.746.082-.731.082-.731 1.206.085 1.84 1.24 1.84 1.24 1.07 1.834 2.808 1.303 3.495 1.003.109-.775.418-1.303.761-1.597-2.666-.303-5.466-1.334-5.466-5.93 0-1.309.469-2.379 1.24-3.22-.124-.303-.537-1.538.118-3.22 0 0 1.003-.32 3.28 1.243.95-.264 1.96-.396 2.967-.396s2.017.132 2.967.396c2.277-1.563 3.28-1.243 3.28-1.243.655 1.682.243 2.917.118 3.22.771.841 1.24 1.911 1.24 3.22 0 4.609-2.802 5.626-5.466 5.93.343.294.642.872.642 1.754 0 1.267-.017 2.28-.017 2.541 0 .32.188.693.795.581 4.771-1.587 8.207-6.085 8.207-11.387 0-6.628-5.372-12-12-12z"/>
+                      </svg>
+                    </a>
+                  </div>   
+            </div>
+        </div>
+       <div class="footer-img-wrapper">
+            <img 
+            srcset="./images/my pic.jpg 200w,
+                    ./images/my pic.jpg 200w"  
+            sizes="(max-width: 600px) 300px, 
+                    (max-width: 768px) 720px, 
+                    992px"
+            src="./images/my pic.jpg"
+            class="footer-img"
+            alt="Tech girl" 
+            />
+       </div>
+      
+       
+    </footer>
+   <script src="script.js"></script>
+
+</body>
+</html>
