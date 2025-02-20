@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    
     // Typing Animation
     const typingAnimationElement = document.getElementById("typing-animation");
 
